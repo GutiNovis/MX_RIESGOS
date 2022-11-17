@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo funciones carga CSV</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGF_CARGA_CSV_V2TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGF_CARGA_CSV_V2</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_CARGA_CSV_V2</FUNCNAME>
+     <SHORT_TEXT>Carga archivos csv</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_USETOTAL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_USER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_DEFINE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_1251</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_TEXTS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_USEGENDA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_1252</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_S_TCODE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_AGRS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_TOBJ</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_GENTRXS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_ALIAS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_ROLAGRPR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_USETOTAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_USER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_DEFINE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_1251</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_TEXTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_USEGENDA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_1252</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_S_TCODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_AGRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_TOBJ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_GENTRXS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_ALIAS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_ROLAGRPR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo funciones CARGA CSV</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGF_CARGA_CSVTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGF_CARGA_CSV</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_CARGA_CSV</FUNCNAME>
+     <SHORT_TEXT>Carga archivos csv</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_ALIAS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_TRX</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_1251</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_1252</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_ROLAGRPR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_ROLAGRDE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_USEGENDA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_USETOTAL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_S_TCODE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_RUTA_AGR_TEXTS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RLGRAP-FILENAME</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>OUT_ALIAS</PARAMETER>
+       <DBSTRUCT>ZBC_ALIAS</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUT_TRX</PARAMETER>
+       <DBSTRUCT>ZBC_TRXS</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUT_1251</PARAMETER>
+       <DBSTRUCT>ZBC_1251</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUT_1252</PARAMETER>
+       <DBSTRUCT>ZBC_1252</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUT_ROL_AGR_PR</PARAMETER>
+       <DBSTRUCT>ZBC_ROL_AGR_PR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUT_ROL_AGR_DE</PARAMETER>
+       <DBSTRUCT>ZBC_ROL_AGR_DE</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUT_USE_GEN_DA</PARAMETER>
+       <DBSTRUCT>ZBC_ROL_AGR_DA</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUT_USE_TOTAL</PARAMETER>
+       <DBSTRUCT>ZBC_USE_TOTAL</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUT_ROL_AGR_TEXT</PARAMETER>
+       <DBSTRUCT>ZBC_ROL_AGR_PR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_ALIAS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_TRX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Estructura TRXS</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_1251</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_1252</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_ROLAGRPR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_ROLAGRDE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_USEGENDA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_USETOTAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_S_TCODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_RUTA_AGR_TEXTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fichero local para upload/download</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_ALIAS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Estructura de archivo alias</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_TRX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Estructura TRXS</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_1251</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Estructura 1251 definicion roles</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_1252</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Estructura 1252 definicion roles</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_ROL_AGR_PR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Roles AGR PR</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_ROL_AGR_DE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>AGR Define Archivo de datos</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_USE_GEN_DA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>USER General Data File</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_USE_TOTAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Total usuarios</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_ROL_AGR_TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Roles AGR PR</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
