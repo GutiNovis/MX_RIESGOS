@@ -9,9 +9,9 @@ REPORT z_carga_base_function MESSAGE-ID zi LINE-SIZE 550 NO STANDARD PAGE HEADIN
 *      line(800),
 *      end of it_paso.
 TYPES: BEGIN OF ty_struc,
-         process_grc_ac01 TYPE  zbc_process_grc_ac,
+         process_grc_ac01 TYPE zed_funcion_grc,
          tcode            TYPE tcode,
-         estado           TYPE  zbc_status,
+         estado           TYPE zed_status,
        END OF ty_struc.
 DATA: it_estruc TYPE TABLE OF zbase_function,
       wa_estruc TYPE zbase_function.
