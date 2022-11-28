@@ -1,5 +1,5 @@
 FUNCTION ZALSM_EXCEL_TO_INTERNAL_TABLE .
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
 *"*"Interfase local
 *"  IMPORTING
 *"     VALUE(FILENAME) LIKE  RLGRAP-FILENAME
@@ -8,11 +8,11 @@ FUNCTION ZALSM_EXCEL_TO_INTERNAL_TABLE .
 *"     VALUE(I_END_COL) TYPE  I
 *"     VALUE(I_END_ROW) TYPE  I
 *"  TABLES
-*"      INTERN STRUCTURE  ALSMEX_TABLINE
+*"      INTERN STRUCTURE  ZALSMEX_TABLINE
 *"  EXCEPTIONS
 *"      INCONSISTENT_PARAMETERS
 *"      UPLOAD_OLE
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
 
   DATA: excel_tab     TYPE  ty_t_sender.
   DATA: ld_separator  TYPE  c.
