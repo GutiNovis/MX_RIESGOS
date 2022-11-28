@@ -33,7 +33,7 @@ FUNCTION z_carga_csv.
   DATA : p_flnme LIKE rlgrap-filename. "File Name
   p_flnme = in_ruta_alias.
   file_str = p_flnme.
-  DELETE FROM ztb_itab.
+  DELETE FROM ztab_itab.
 *UPLOADING FILE INTO INTERNAL TABLE
   CALL FUNCTION 'GUI_UPLOAD'
     EXPORTING
@@ -68,7 +68,7 @@ FUNCTION z_carga_csv.
   LOOP AT itab2.
     SPLIT itab2-value AT ';' INTO out_alias-bname out_alias-aliasu.
     APPEND out_alias.
-    MODIFY ztb_itab FROM out_alias.
+    MODIFY ztab_itab FROM out_alias.
     COMMIT WORK.
     CLEAR out_alias.
   ENDLOOP.
@@ -76,7 +76,7 @@ FUNCTION z_carga_csv.
   CLEAR itab2.
   p_flnme = in_ruta_trx.
   file_str = p_flnme.
-  DELETE FROM ztb_trxs.
+  DELETE FROM ztab_trxs.
 *UPLOADING FILE INTO INTERNAL TABLE
   CALL FUNCTION 'GUI_UPLOAD'
     EXPORTING
@@ -111,7 +111,7 @@ FUNCTION z_carga_csv.
   LOOP AT itab2.
     SPLIT itab2-value AT ';' INTO out_trx-tcode out_trx-progname out_trx-description.
     APPEND out_trx.
-    MODIFY ztb_trxs FROM out_trx.
+    MODIFY ztab_trxs FROM out_trx.
     COMMIT WORK.
     CLEAR out_trx.
   ENDLOOP.
@@ -120,7 +120,7 @@ FUNCTION z_carga_csv.
   CLEAR itab2.
   p_flnme = in_ruta_agr_1251.
   file_str = p_flnme.
-  DELETE FROM ztb_1251.
+  DELETE FROM ztab_1251.
 *UPLOADING FILE INTO INTERNAL TABLE
   CALL FUNCTION 'GUI_UPLOAD'
     EXPORTING
@@ -155,7 +155,7 @@ FUNCTION z_carga_csv.
   LOOP AT itab2.
     SPLIT itab2-value AT ';' INTO out_1251-mandt out_1251-agr_name out_1251-counter out_1251-object out_1251-auth out_1251-variant out_1251-field out_1251-low out_1251-high out_1251-modified out_1251-deleted out_1251-copied out_1251-neu out_1251-node .
     APPEND out_1251.
-    MODIFY ztb_1251 FROM out_1251.
+    MODIFY ztab_1251 FROM out_1251.
     COMMIT WORK.
     CLEAR out_1251.
   ENDLOOP.
@@ -164,7 +164,7 @@ FUNCTION z_carga_csv.
   CLEAR itab2.
   p_flnme = in_ruta_agr_1252.
   file_str = p_flnme.
-  DELETE FROM ztb_1252.
+  DELETE FROM ztab_1252.
 *UPLOADING FILE INTO INTERNAL TABLE
   CALL FUNCTION 'GUI_UPLOAD'
     EXPORTING
@@ -199,7 +199,7 @@ FUNCTION z_carga_csv.
   LOOP AT itab2.
     SPLIT itab2-value AT ';' INTO out_1252-mandt out_1252-agr_name out_1252-counter out_1252-varbl out_1252-low out_1252-high.
     APPEND out_1252.
-    MODIFY ztb_1252 FROM out_1252.
+    MODIFY ztab_1252 FROM out_1252.
     COMMIT WORK.
     CLEAR out_1252.
   ENDLOOP.
@@ -252,7 +252,7 @@ FUNCTION z_carga_csv.
   CLEAR itab2.
   p_flnme = in_ruta_rolagrde.
   file_str = p_flnme.
-  DELETE FROM ztb_rol_agr_de.
+  DELETE FROM ztab_rol_agr_de.
 *UPLOADING FILE INTO INTERNAL TABLE
   CALL FUNCTION 'GUI_UPLOAD'
     EXPORTING
@@ -300,7 +300,7 @@ FUNCTION z_carga_csv.
                                   out_rol_agr_de-attributes
                                   out_rol_agr_de-text.
     APPEND out_rol_agr_de.
-    MODIFY ztb_rol_agr_de FROM out_rol_agr_de.
+    MODIFY ztab_rol_agr_de FROM out_rol_agr_de.
     COMMIT WORK.
     CLEAR out_rol_agr_de.
   ENDLOOP.
@@ -309,7 +309,7 @@ FUNCTION z_carga_csv.
   CLEAR itab2.
   p_flnme = in_ruta_usegenda.
   file_str = p_flnme.
-  DELETE FROM ztb_use_gen_da.
+  DELETE FROM ZTAB_USE_GEN_DA.
 *UPLOADING FILE INTO INTERNAL TABLE
   CALL FUNCTION 'GUI_UPLOAD'
     EXPORTING
@@ -355,7 +355,7 @@ FUNCTION z_carga_csv.
                                   out_use_gen_da-ltime
                                   out_use_gen_da-uflag.
     APPEND out_use_gen_da.
-    MODIFY ztb_use_gen_da FROM out_use_gen_da.
+    MODIFY ZTAB_USE_GEN_DA FROM out_use_gen_da.
     COMMIT WORK.
     CLEAR out_use_gen_da.
   ENDLOOP.
@@ -502,7 +502,7 @@ FUNCTION z_carga_csv.
   LOOP AT itab2.
     SPLIT itab2-value AT ';' INTO out_rol_agr_text-mandt out_rol_agr_text-agr_name out_rol_agr_text-langu out_rol_agr_text-profile out_rol_agr_text-ptext.
     APPEND out_rol_agr_text.
-    MODIFY ztb_rol_agr_pr FROM out_rol_agr_pr.
+    MODIFY ztab_rol_agr_pr FROM out_rol_agr_pr.
     COMMIT WORK.
     CLEAR out_rol_agr_text.
   ENDLOOP.
