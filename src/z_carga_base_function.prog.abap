@@ -49,7 +49,7 @@ START-OF-SELECTION.
 *&---------------------------------------------------------------------*
 FORM inicia_proceso.
   REFRESH it_excel_data.
-  CALL FUNCTION 'ALSM_EXCEL_TO_INTERNAL_TABLE'
+  CALL FUNCTION 'ZALSM_EXCEL_TO_INTERNAL_TABLE'
     EXPORTING
       filename                = origen
       i_begin_col             = 1
