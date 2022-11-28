@@ -21,7 +21,7 @@ DATA: it_estruc TYPE TABLE OF zbase_function,
 *    INCLUDE STRUCTURE zestruc.
 *DATA: END OF it_estruc.
 DATA: BEGIN OF it_excel_data OCCURS 0.
-    INCLUDE STRUCTURE  alsmex_tabline.
+    INCLUDE STRUCTURE  zalsmex_tabline.
 DATA: END OF it_excel_data.
 DATA: acum    TYPE p,
       acumins TYPE p.
