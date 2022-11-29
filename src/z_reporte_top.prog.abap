@@ -10,14 +10,14 @@ TABLES: sscrfields,
 *        zbc_tiposistdm,
         usr02,
         suid_st_node_logondata,
-        zbc_clientesdm,
+*        zbc_clientesdm,
 *        zbc_log_analisdm,
         agr_define,
         agr_1251.
 
 " TYPES --
 TYPES: BEGIN OF ty_rep1,
-         id_sistema     TYPE zbc_idsistema,
+         id_sistema     TYPE syst-sysid,
          proc_neg       TYPE zed_proceso_negocio,
          desc_proc_neg  TYPE zed_descripcion,
          id_user        TYPE xubname,
@@ -41,7 +41,7 @@ TYPES: BEGIN OF ty_rep1,
          ok             TYPE char1,
        END OF ty_rep1,
        BEGIN OF ty_rep2,
-         id_sistema     TYPE zbc_idsistema,
+         id_sistema     TYPE syst-sysid,
          proc_neg       TYPE zed_proceso_negocio,
          desc_proc_neg  TYPE zed_descripcion,
          id_user        TYPE xubname,
@@ -77,7 +77,7 @@ TYPES: BEGIN OF ty_rep1,
          ok             TYPE char1,
        END OF ty_rep2,
        BEGIN OF ty_rep3,
-         id_sistema     TYPE zbc_idsistema,
+         id_sistema     TYPE syst-sysid,
          proc_neg       TYPE zed_proceso_negocio,
          desc_proc_neg  TYPE zed_descripcion,
          id_user        TYPE xubname,
@@ -113,7 +113,7 @@ TYPES: BEGIN OF ty_rep1,
          ok             TYPE char1,
        END OF ty_rep3,
        BEGIN OF ty_rep4,
-         id_sistema     TYPE zbc_idsistema,
+         id_sistema     TYPE syst-sysid,
          proc_neg       TYPE zed_proceso_negocio,
          desc_proc_neg  TYPE zed_descripcion,
          id_user        TYPE xubname,
@@ -149,28 +149,6 @@ TYPES: BEGIN OF ty_rep1,
          ok             TYPE char1,
        END OF ty_rep4.
 
-DATA: it_clientesdm   LIKE TABLE OF zbc_clientesdm WITH HEADER LINE,
-      it_log_analisdm LIKE TABLE OF zbc_log_analisdm WITH HEADER LINE,
-      it_analisisdm   LIKE TABLE OF zbc_analisisdm WITH HEADER LINE,
-      it_risk         LIKE TABLE OF zbc_risk WITH HEADER LINE,
-      wa_clientesdm   LIKE LINE OF it_clientesdm,
-      wa_analisisdm   LIKE LINE OF it_analisisdm,
-      wa_reisk        LIKE LINE OF it_risk,
-      lv_ambiente     TYPE zbc_nomsistema.
-
-DATA: lv_codcli  LIKE zbc_clientesdm-codigo,
-      lv_raiz    TYPE rlgrap-filename,
-      lv_ruta1   TYPE rlgrap-filename,
-      lv_ruta2   TYPE rlgrap-filename,
-      lv_ruta3   TYPE rlgrap-filename,
-      lv_ruta4   TYPE rlgrap-filename,
-      lv_ruta5   TYPE rlgrap-filename,
-      lv_ruta6   TYPE rlgrap-filename,
-      lv_ruta7   TYPE rlgrap-filename,
-      lv_ruta8   TYPE rlgrap-filename,
-      lv_ruta9   TYPE rlgrap-filename,
-      lv_version TYPE zbc_log_analisdm-version,
-      lv_id      TYPE zbc_log_analisdm-id_analisis.
 * tabla ZTB_ITAB
 DATA: BEGIN OF itab OCCURS 0,
         mandt  TYPE mandt,
@@ -268,21 +246,6 @@ DATA: BEGIN OF t_use_total OCCURS 0,
         l_entry_id1(40),
         l_entry_id2(32),
       END OF t_use_total.
-
-DATA: " it_rep_usuario TYPE TABLE OF zbc_rep_usuario WITH HEADER LINE,
-  it_accritec  TYPE TABLE OF zbc_accritec WITH HEADER LINE,
-  it_riesgos   TYPE TABLE OF zbc_risk WITH HEADER LINE,
-  it_funciones TYPE TABLE OF zbc_function WITH HEADER LINE.
-*DATA: tab_rep_usuario TYPE TABLE OF it_rep_usuario, wa_rep_usuario TYPE it_rep_usuario.
-*DATA: it_analisisdm LIKE wa_analisisdm.
-
-FIELD-SYMBOLS: <fs_it_clientesdm> LIKE it_clientesdm,
-               <fs_it_analisisdm> LIKE it_analisisdm,
-               <fs_log_analisdm>  LIKE it_log_analisdm,
-*               <fs_an_usuarios>    LIKE it_rep_usuario,
-               <fs_rol_agr_us>    LIKE t_rol_agr_us,
-               <fs_it_riesgos>    LIKE it_riesgos.
-*               <fs_it_rep_usuario> LIKE it_rep_usuario.
 
 * FIELD SYMBOLS DEL ANALISIS.
 FIELD-SYMBOLS: <fs_itab> LIKE itab.
