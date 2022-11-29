@@ -7,11 +7,11 @@ TABLES: sscrfields,
         usr10,
         ust12,
         tstc,
-        zbc_tiposistdm,
+*        zbc_tiposistdm,
         usr02,
         suid_st_node_logondata,
         zbc_clientesdm,
-        zbc_log_analisdm,
+*        zbc_log_analisdm,
         agr_define,
         agr_1251.
 

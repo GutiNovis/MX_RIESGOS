@@ -120,6 +120,12 @@
     </item>
     <item>
      <ID>S</ID>
+     <KEY>P_CLIEN</KEY>
+     <ENTRY>Cliente</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
      <KEY>P_LANGU</KEY>
      <ENTRY>Idioma</ENTRY>
      <LENGTH>14</LENGTH>
@@ -144,12 +150,6 @@
      <ENTRY>.</ENTRY>
      <LENGTH>20</LENGTH>
      <SPLIT>D</SPLIT>
-    </item>
-    <item>
-     <ID>S</ID>
-     <KEY>S_CLIEN</KEY>
-     <ENTRY>Cliente</ENTRY>
-     <LENGTH>15</LENGTH>
     </item>
     <item>
      <ID>S</ID>

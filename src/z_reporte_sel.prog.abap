@@ -3,10 +3,10 @@
 *&---------------------------------------------------------------------*
 
 SELECTION-SCREEN BEGIN OF BLOCK blk1  WITH FRAME TITLE title1.
-SELECT-OPTIONS: s_fecha FOR sy-datum NO INTERVALS NO-EXTENSION OBLIGATORY DEFAULT sy-datum,
-                s_clien FOR zbc_clientesdm-codigo NO INTERVALS NO-EXTENSION OBLIGATORY DEFAULT 'NVS'.
+SELECT-OPTIONS: s_fecha FOR sy-datum NO INTERVALS NO-EXTENSION OBLIGATORY DEFAULT sy-datum.
+PARAMETERS: p_clien TYPE char5 DEFAULT 'NVS',
 *                s_sist  syst-sysid NO INTERVALS NO-EXTENSION OBLIGATORY.
-PARAMETERS: p_sist  TYPE syst-sysid OBLIGATORY DEFAULT 'DEC',
+            p_sist  TYPE syst-sysid OBLIGATORY DEFAULT 'DEC',
             p_langu TYPE sy-langu OBLIGATORY DEFAULT 'S'.
 SELECTION-SCREEN BEGIN OF LINE .
 SELECTION-SCREEN COMMENT (30) TEXT-015.
